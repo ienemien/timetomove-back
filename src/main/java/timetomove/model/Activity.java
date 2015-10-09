@@ -6,7 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.Type;
@@ -32,7 +32,7 @@ public class Activity {
 	@Column(name = "END", nullable = true)
 	private DateTime end;
 
-	@OneToOne(optional = false)
+	@ManyToOne(optional = false)
 	@JoinColumn(name = "INTENSITY_CODE", referencedColumnName = "CODE")
 	private ActivityIntensity intensity;
 

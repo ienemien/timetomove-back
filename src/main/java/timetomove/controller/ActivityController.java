@@ -50,7 +50,7 @@ public class ActivityController {
 		activityService.deleteActivity(activity);
 	}
 
-	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE, consumes = "application/json")
+	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
 	public void deleteActivityById(@PathVariable final int id) {
 		activityService.deleteById(id);
 	}

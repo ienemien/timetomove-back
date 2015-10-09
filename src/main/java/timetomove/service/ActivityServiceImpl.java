@@ -8,16 +8,20 @@ import org.springframework.transaction.annotation.Transactional;
 
 import timetomove.model.Activity;
 import timetomove.model.ActivityDao;
+import timetomove.model.ActivityIntensity;
+import timetomove.model.ActivityIntensityDao;
 
 @Service("activityService")
 @Transactional
 public class ActivityServiceImpl implements ActivityService {
 
 	private final ActivityDao activityDao;
+	private final ActivityIntensityDao intensityDao;
 
 	@Autowired
-	public ActivityServiceImpl(final ActivityDao activityDao) {
+	public ActivityServiceImpl(final ActivityDao activityDao, final ActivityIntensityDao intensityDao) {
 		this.activityDao = activityDao;
+		this.intensityDao = intensityDao;
 	}
 
 	public List<Activity> findAllActivities() {
@@ -29,6 +33,8 @@ public class ActivityServiceImpl implements ActivityService {
 	}
 
 	public void createActivity(final Activity activity) {
+		ActivityIntensity intensity = intensityDao.findByCode(activity.getIntensity().getCode());
+		activity.setIntensity(intensity);
 		activityDao.createActivity(activity);
 	}
 
