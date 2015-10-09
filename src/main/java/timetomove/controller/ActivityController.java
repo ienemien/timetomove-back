@@ -40,7 +40,7 @@ public class ActivityController {
 		activityService.createActivity(activity);
 	}
 
-	@RequestMapping(method = RequestMethod.PUT, consumes = "application/json")
+	@RequestMapping(value = "/{id}", method = RequestMethod.PUT, consumes = "application/json")
 	public void updateActivity(@RequestBody final Activity activity) {
 		activityService.updateActivity(activity);
 	}
