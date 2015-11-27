@@ -54,4 +54,5 @@ public class ActivityController {
 	public void deleteActivityById(@PathVariable final int id) {
 		activityService.deleteById(id);
 	}
+
 }
