@@ -5,6 +5,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import timetomove.model.activities.ActivityDaoImpl;
 
 @Ignore
 public class ActivityDaoImplTest {

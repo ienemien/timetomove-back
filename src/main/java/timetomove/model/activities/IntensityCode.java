@@ -1,4 +1,4 @@
-package timetomove.model;
+package timetomove.model.activities;
 
 public enum IntensityCode {
 	HIGH, MEDIUM, LOW

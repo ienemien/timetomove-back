@@ -1,6 +1,6 @@
-package timetomove.service;
+package timetomove.service.activities;
 
-import timetomove.model.ActivityIntensity;
+import timetomove.model.activities.ActivityIntensity;
 
 import java.util.List;
 

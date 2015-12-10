@@ -1,4 +1,4 @@
-package timetomove.model;
+package timetomove.model.activities;
 
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;

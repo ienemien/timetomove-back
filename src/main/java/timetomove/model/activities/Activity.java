@@ -1,4 +1,4 @@
-package timetomove.model;
+package timetomove.model.activities;
 
 import org.hibernate.annotations.Type;
 import org.joda.time.DateTime;

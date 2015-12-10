@@ -1,4 +1,4 @@
-package timetomove.controller;
+package timetomove.controller.activities;
 
 import java.util.List;
 
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import timetomove.model.Activity;
-import timetomove.service.ActivityService;
+import timetomove.model.activities.Activity;
+import timetomove.service.activities.ActivityService;
 
 @RestController
 @RequestMapping(value = "/api/activity")

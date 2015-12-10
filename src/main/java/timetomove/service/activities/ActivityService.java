@@ -1,8 +1,8 @@
-package timetomove.service;
+package timetomove.service.activities;
 
 import java.util.List;
 
-import timetomove.model.Activity;
+import timetomove.model.activities.Activity;
 
 public interface ActivityService {
 

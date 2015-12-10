@@ -1,4 +1,4 @@
-package timetomove.model;
+package timetomove.model.activities;
 
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Restrictions;

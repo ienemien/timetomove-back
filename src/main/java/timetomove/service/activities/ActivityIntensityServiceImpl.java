@@ -1,11 +1,10 @@
-package timetomove.service;
+package timetomove.service.activities;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import timetomove.model.ActivityIntensity;
-import timetomove.model.ActivityIntensityDao;
+import timetomove.model.activities.ActivityIntensity;
+import timetomove.model.activities.ActivityIntensityDao;
 
 import java.util.List;
 
